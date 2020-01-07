@@ -1,0 +1,7 @@
+github:
+  api-version: application/vnd.github.v3+json
+  protocol: https
+  host: api.github.com
+  path: repos
+  url: ${github.protocol}://${github.host}/${github.path}
+  token: ${GITHUB_TOKEN:}

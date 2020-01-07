@@ -1,0 +1,11 @@
+github:
+  api-version: application/vnd.github.v3+json
+  protocol: http
+  host: localhost:${wiremock.server.port}
+  path: repos
+  url: ${github.protocol}://${github.host}/${github.path}
+  token: example-token
+
+wiremock:
+  server:
+    port-dynamic: true
